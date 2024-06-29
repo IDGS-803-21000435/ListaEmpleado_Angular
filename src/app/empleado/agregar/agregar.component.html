@@ -1,32 +1,35 @@
-<div class="container mt-5">
-    
+<div class="container mt-5">    
     <form (submit)="agregar()">
       <div class="card">
         <div class="card-header text-center">
           <h1>Formulario</h1>
         </div>
         <div class="card-body">
-          <div class="row mb-3">
-            <div class="col-md-6">
+          <div class="row m-3">
+            <div class="col-6 mx-auto">
               <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nuevoEmpleado.nombre"
                 placeholder="Ingresa tu nombre">
-            </div>
-            <div class="col-md-6">
+            </div>            
+          </div>
+          <div class="row m-3">
+            <div class="col-6 mx-auto">
               <input type="email" class="form-control" id="correo" name="correo" [(ngModel)]="nuevoEmpleado.correo"
                 placeholder="Ingresa tu correo">
             </div>
           </div>
-          <div class="row mb-3">
-            <div class="col-md-6">
+          <div class="row m-3">
+            <div class="col-6 mx-auto">
               <input type="tel" class="form-control" id="telefono" name="telefono" [(ngModel)]="nuevoEmpleado.telefono"
                 placeholder="Ingresa tu teléfono">
             </div>
-            <div class="col-md-6">
+          </div>
+          <div class="row m-3">
+            <div class="col-6 mx-auto">
               <input type="date" class="form-control" id="fechaIngreso" name="fechaIngreso" [(ngModel)]="nuevoEmpleado.fechaIngreso">
             </div>
           </div>
-          <div class="row mb-3 text-center">
-            <div class="col-md-12">
+          <div class="row  text-center">
+            <div class="col">
               <label class="form-label">Sexo:</label>
               <div>
                 <div class="form-check form-check-inline">

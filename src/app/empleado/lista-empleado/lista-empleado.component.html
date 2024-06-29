@@ -12,15 +12,14 @@
       </thead>
       <tbody>
         @for (empleado of empleados; track empleado.nombre){
-        <tr>
-          <td>{{empleado.nombre}}</td>
-          <td>{{empleado.correo}}</td>
-          <td>{{empleado.telefono}}</td>
-          <td>{{empleado.fechaIngreso}}</td>
-          <td>{{empleado.sexo}}</td>
-          <td><button class="btn btn-danger btn-sm" (click)="eliminarEmpleado(empleado)"><i
-                class="bi bi-trash"></i></button></td>
-        </tr>
+          <tr>
+            <td>{{empleado.nombre}}</td>
+            <td>{{empleado.correo}}</td>
+            <td>{{empleado.telefono}}</td>
+            <td>{{empleado.fechaIngreso}}</td>
+            <td>{{empleado.sexo}}</td>
+            <td><button class="btn btn-danger btn-sm" (click)="eliminarEmpleado(empleado)">Eliminar</button></td>
+          </tr>
         }
       </tbody>
     </table>
